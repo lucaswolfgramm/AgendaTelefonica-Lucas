@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:weightSum="1">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        android:background="@color/colorPrimary"/>
+
+
+        <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/botaoeditar"
+            android:id="@+id/menu_editar"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/gridView"
+            android:layout_toEndOf="@+id/searchView"
+            android:layout_marginLeft="200dp"
+            android:contentDescription="editar" />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/botaoexcluir"
+            android:id="@+id/menu_excluir"
+            android:layout_marginBottom="0.15dp"
+            android:contentDescription="excluir" />
+        </LinearLayout>    -->
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvNomes"
+            android:layout_centerHorizontal="true"
+            android:choiceMode="singleChoice"
+            android:layout_below="@+id/toolbar" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/botao_add"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/ic_add_white_24dp"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="53dp"
+            android:contentDescription="@string/add_botton" />
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchView"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="true"
+            android:clickable="true"
+            android:layout_above="@+id/lvNomes"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="55dp" />
+    </RelativeLayout>
+</LinearLayout>

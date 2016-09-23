@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        android:background="@color/colorPrimary"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_gravity="center_horizontal"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:text="Numero Telefone Fixo"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:text="Numero Telefone Celular"
+        android:editable="true"
+        android:enabled="true"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentStart="true" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+
+    android:orientation="horizontal"
+    android:layout_marginTop="250dp">
+
+    >
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:orientation="horizontal"
+        android:id="@+id/botaoSalvar"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/screen_border"
+        android:layout_gravity="center_vertical" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/botaoCancelar"
+        android:orientation="horizontal"
+        android:enabled="true"
+        android:clickable="true"
+        android:layout_weight="0.15"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/screen_border"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>
+
+</LinearLayout>

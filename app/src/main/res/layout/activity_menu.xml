@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.trioparadadura.agendatelefonica.MainActivity"
+    android:background="@drawable/radial"
+    android:clickable="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        android:background="@color/colorPrimary"/>
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:text="Home"
+        android:id="@+id/buttonhome"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/screen_border"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:enabled="true"
+        android:onClick="onOptionsItemSelected()" />
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:text="Adicionar Contato"
+        android:id="@+id/buttonadd"
+        android:layout_below="@+id/buttonadd"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/screen_border"
+        android:clickable="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:enabled="true" />
+
+    <Button
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:text="Alterar Contato"
+        android:id="@+id/buttonalterar"
+        android:background="@drawable/screen_border"
+        android:layout_below="@+id/buttonalterar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:enabled="true" />
+
+</LinearLayout>
